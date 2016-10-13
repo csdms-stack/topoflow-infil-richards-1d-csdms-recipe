@@ -1,0 +1,30 @@
+{% set name = "topoflow-infil-richards-1d-csdms" %}
+{% set version = "3.4" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  git_url: https://github.com/csdms/topoflow-bridge
+
+requirements:
+  build:
+    - bmi-babel
+    - topoflow
+  run:
+    - bmi-babel
+    - topoflow
+
+test:
+  requires:
+    - pymt
+    - bmi-tester
+
+about:
+  home: http://csdms.colorado.edu/wiki/Model:TopoFlow-Infiltration-Richards_1D
+  license: Apache
+  summary: |
+    Infiltration process component (Richards 1D method) for a D8-based,
+    spatial hydrologic model
+
