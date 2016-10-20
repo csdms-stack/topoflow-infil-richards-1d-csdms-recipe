@@ -1,4 +1,4 @@
-{% set name = "topoflow-infil-richards-1d-csdms" %}
+{% set name = "csdms-topoflow-infil-richards-1d" %}
 {% set version = "3.4" %}
 
 package:
